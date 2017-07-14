@@ -1,4 +1,4 @@
-package main.model;
+package main.model.POJO;
 
 /**
  * Created by video on 14.07.2017.
