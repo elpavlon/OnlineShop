@@ -2,6 +2,8 @@ package main.model.DAO;
 
 import main.model.POJO.Consumer;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Collection;
 
 /**
@@ -33,5 +35,10 @@ public class ConsumerDAO implements DAO <Long, Consumer> {
 
     public void delete(Consumer entity)
     {}
+
+    private Consumer createConsumer(ResultSet resultSet) throws SQLException
+    {
+        return null;
+    }
 
 }
