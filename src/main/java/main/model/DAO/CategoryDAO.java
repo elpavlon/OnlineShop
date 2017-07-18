@@ -77,6 +77,7 @@ public class CategoryDAO implements DAO <Integer, Category> {
         try (Connection connection = ConnectionPool.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(UPDATE_WHERE)) {
             statement.setString(1, entity.getName());
+            statement.setInt(2, entity.getId());
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

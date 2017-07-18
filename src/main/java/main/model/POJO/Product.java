@@ -8,10 +8,10 @@ public class Product {
     private String name;
     private String brand;
     private int categoryId;
-    private double cost;
+    private float cost;
     private int quantity;
 
-    public Product(long id, String name, String brand, int categoryId, double cost, int quantity) {
+    public Product(long id, String name, String brand, int categoryId, float cost, int quantity) {
         this.id = id;
         this.name = name;
         this.brand = brand;
@@ -52,11 +52,11 @@ public class Product {
         this.categoryId = categoryId;
     }
 
-    public double getCost() {
+    public float getCost() {
         return cost;
     }
 
-    public void setCost(double cost) {
+    public void setCost(float cost) {
         this.cost = cost;
     }
 

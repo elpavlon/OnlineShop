@@ -10,12 +10,17 @@ public class Order {
     private long consumerId;
     private long productId;
     private Timestamp date;
+    private int quantity;
 
-    public Order(long id, long consumerId, long productId, Timestamp date) {
+
+
+    public Order(long id, long consumerId, long productId, Timestamp date, int quantity) {
         this.id = id;
         this.consumerId = consumerId;
         this.productId = productId;
         this.date = date;
+        this.quantity = quantity;
+
     }
 
     public long getId() {
@@ -49,4 +54,8 @@ public class Order {
     public void setDate(Timestamp date) {
         this.date = date;
     }
+
+    public int getQuantity() { return quantity; }
+
+    public void setQuantity(int quantity) { this.quantity = quantity; }
 }
